@@ -43,8 +43,8 @@
             bindings = <
 &kp TAB         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5              &kp KP_MINUS  &kt N7        &kp N8        &kp NUMBER_9  &kp KP_SLASH     &trans
 &kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &kp KP_PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK  &trans
-&tog 0          &trans        &trans        &trans        &trans        &trans              &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER        &trans
-                                            &kp LCTRL     &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE     &kp N0        &tog 2
+&to 0           &trans        &trans        &trans        &trans        &trans              &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER        &trans
+                                            &kp LCTRL     &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE     &kp N0        &to 2
             >;
         };
 
@@ -60,8 +60,8 @@
             bindings = <
 &kp ESC    &kp F1    &kp F2    &kp F3     &kp F4     &kp F5      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
 &kp LSHFT  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans      &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&tog 0     &trans    &trans    &trans     &kp UP     &kp DOWN    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                               &kp LEFT   &kp RIGHT  &kp LGUI    &kp SPACE  &kp RET    &tog 1
+&to 0      &trans    &trans    &trans     &kp UP     &kp DOWN    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                               &kp LEFT   &kp RIGHT  &kp LGUI    &kp SPACE  &kp RET    &to 1
             >;
         };
     };
