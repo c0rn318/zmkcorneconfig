@@ -6,6 +6,7 @@
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -20,6 +21,13 @@
             quick-tap-ms = <175>;
             flavor = "balanced";
             hold-trigger-on-release;
+        };
+
+        SCW: SCW {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SCW";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
     };
 
@@ -38,7 +46,7 @@
             bindings = <
 &HMR TILDE ESC  &HMR EXCL Q   &HMR AT W     &HMR HASH E  &HMR DOLLAR R  &HMR PERCENT T    &HMR CARET Y  &HMR AMPS U  &HMR ASTRK I  &HMR LEFT_PARENTHESIS O  &HMR RIGHT_PARENTHESIS P  &kp BSPC
 &kp TAB         &HMR LSHFT A  &HMR LCTRL S  &HMR LALT D  &HMR LGUI F    &kp G             &kp H         &HMR RGUI J  &HMR RALT K   &HMR RCTRL L             &HMR RSHFT SEMICOLON      &HMR BACKSLASH SQT
-&kp LSHFT       &kp Z         &kp X         &kp C        &kp V          &kp B             &kp N         &kp M        &kp COMMA     &kp DOT                  &kp FSLH                  &kp DELETE
+&SCW            &kp Z         &kp X         &kp C        &kp V          &kp B             &kp N         &kp M        &kp COMMA     &kp DOT                  &kp FSLH                  &kp DELETE
                                             &none        &kp ENTER      &none             &none         &kp SPACE    &none
             >;
         };
@@ -70,11 +78,22 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &none  &none     &kp UP    &none      &none    &trans  &trans  &trans  &trans  &trans  &trans
-&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none    &trans  &trans  &trans  &trans  &trans  &trans
-&none  &none  &none     &none     &none      &none    &trans  &trans  &trans  &trans  &trans  &trans
-                        &none     &none      &none    &trans  &trans  &trans
+&none  &none  &none     &kp UP      &none          &none            &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &kp LEFT  &kp DOWN    &kp RIGHT      &none            &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none     &none       &none          &none            &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp DELETE  &mt TAB ENTER  &kp BACKSPACE    &trans  &trans  &trans
             >;
+        };
+
+        Media {
+            bindings = <
+&bt BT_CLR_ALL  &none         &none         &none         &none         &none           &none  &kp C_VOL_UP  &kp C_NEXT  &none                 &none                 &none
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOL_DN  &kp C_PREV  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none
+&none           &none         &none         &none         &none         &none           &none  &kp C_MUTE    &kp C_PP    &none                 &none                 &none
+                                            &none         &none         &none           &none  &none         &none
+            >;
+
+            label = "Media";
         };
     };
 };
