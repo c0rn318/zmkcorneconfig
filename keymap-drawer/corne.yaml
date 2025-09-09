@@ -44,48 +44,48 @@ layers:
   - ␣
   - ''
   LOW:
-  - ↹
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - KP MINUS
+  - ''
+  - ESCAPE
+  - BACKSPACE
+  - '7'
+  - '8'
+  - '9'
+  - ''
   - {t: '7', h: toggle}
   - '8'
   - '9'
-  - KP SLASH
-  - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - KP PLUS
+  - BACKSPACE
+  - ''
+  - ''
+  - UP ARROW
+  - ENTER
   - '4'
   - '5'
   - '6'
-  - KP ASTERISK
-  - {t: ▽, type: trans}
-  - {t: BAS, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP EQUAL
+  - {t: End, h: Home}
+  - '4'
+  - '5'
+  - '6'
+  - {t: ., h: ''''}
+  - ''
+  - ←
+  - ↓
+  - →
+  - '1'
+  - '2'
+  - '3'
+  - <
   - '1'
   - '2'
   - '3'
   - ENTER
-  - {t: ▽, type: trans}
+  - {t: '[', h: ']'}
   - $$mdi:apple-keyboard-control$$
-  - LEFT ALT
-  - LEFT COMMAND
-  - ␣
   - '0'
-  - {t: RAI, h: toggle}
+  - LEFT SHIFT
+  - {t: ␣, h: LEFT SHIFT}
+  - {t: '0', h: '='}
+  - ↹
   RAI:
   - Esc
   - F1
