@@ -44,11 +44,22 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&HMR TILDE ESC  &HMR EXCL Q   &HMR AT W     &HMR HASH E  &HMR DOLLAR R  &HMR PERCENT T    &HMR CARET Y  &HMR AMPS U  &HMR ASTRK I  &HMR LEFT_PARENTHESIS O  &HMR RIGHT_PARENTHESIS P  &kp BSPC
-&kp TAB         &HMR LSHFT A  &HMR LCTRL S  &HMR LALT D  &HMR LGUI F    &kp G             &kp H         &HMR RGUI J  &HMR RALT K   &HMR RCTRL L             &HMR RSHFT SEMICOLON      &HMR BACKSLASH SQT
-&SCW            &kp Z         &kp X         &kp C        &kp V          &kp B             &kp N         &kp M        &kp COMMA     &kp DOT                  &kp FSLH                  &kp DELETE
-                                            &none        &kp ENTER      &none             &none         &kp SPACE    &none
+&HMR TILDE ESC  &HMR NUMBER_1 Q  &HMR NUMBER_2 W  &HMR NUMBER_3 E  &HMR NUMBER_4 R  &HMR N5 T    &HMR NUMBER_6 Y  &HMR N7 U    &HMR N8 I    &HMR N9 O     &HMR N0 P             &kp BSPC
+&kp TAB         &HMR LSHFT A     &HMR LCTRL S     &HMR LALT D      &HMR LGUI F      &kp G        &kp H            &HMR RGUI J  &HMR RALT K  &HMR RCTRL L  &HMR RSHFT SEMICOLON  &HMR BACKSLASH SQT
+&SCW            &kp Z            &kp X            &kp C            &kp V            &kp B        &kp N            &kp M        &kp COMMA    &kp DOT       &kp FSLH              &kp DELETE
+                                                  &sl 1            &kp ENTER        &none        &none            &kp SPACE    &none
             >;
+        };
+
+        Function {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "FN";
         };
 
         Num_Pad {
@@ -62,7 +73,7 @@
 
             bindings = <
 &none     &kp ESCAPE    &kp BACKSPACE  &kp N7               &kp N8        &kp N9                &mt PG_UP PAGE_DOWN   &kt N7              &kp N8             &kp NUMBER_9         &kp BACKSPACE    &kp DELETE
-&none     &kp UP_ARROW  &kp ENTER      &HMR LCTRL NUMBER_4  &HMR LALT N5  &HMR LGUI NUMBER_6    &mt HOME END          &HMR RGUI NUMBER_4  &HMR RIGHT_ALT N5  &HMR RCTRL NUMBER_6  &mt APOS PERIOD  &mo 2
+&none     &kp UP_ARROW  &kp ENTER      &HMR LCTRL NUMBER_4  &HMR LALT N5  &HMR LGUI NUMBER_6    &mt HOME END          &HMR RGUI NUMBER_4  &HMR RIGHT_ALT N5  &HMR RCTRL NUMBER_6  &mt APOS PERIOD  &mo 3
 &kp LEFT  &kp DOWN      &kp RIGHT      &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3          &mt LESS_THAN ESCAPE  &kp NUMBER_1        &kp NUMBER_2       &kp NUMBER_3         &kp ENTER        &mt RIGHT_BRACKET LEFT_BRACKET
                                        &none                &kp N0        &kp LEFT_SHIFT        &mt LEFT_SHIFT SPACE  &HMR EQUAL N0       &kp TAB
             >;

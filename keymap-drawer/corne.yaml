@@ -2,16 +2,16 @@ layout: {zmk_keyboard: corne}
 layers:
   BAS:
   - {t: Esc, h: '~'}
-  - {t: Q, h: '!'}
-  - {t: W, h: '@'}
-  - {t: E, h: '#'}
-  - {t: R, h: $}
-  - {t: T, h: '%'}
-  - {t: Y, h: ^}
-  - {t: U, h: AMPS}
-  - {t: I, h: '*'}
-  - {t: O, h: (}
-  - {t: P, h: )}
+  - {t: Q, h: '1'}
+  - {t: W, h: '2'}
+  - {t: E, h: '3'}
+  - {t: R, h: '4'}
+  - {t: T, h: '5'}
+  - {t: Y, h: '6'}
+  - {t: U, h: '7'}
+  - {t: I, h: '8'}
+  - {t: O, h: '9'}
+  - {t: P, h: '0'}
   - $$mdi:backspace-outline$$
   - ↹
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
@@ -37,12 +37,55 @@ layers:
   - .
   - /
   - DELETE
-  - ''
+  - {t: FN, h: sticky}
   - ENTER
   - ''
   - ''
   - ␣
   - ''
+  FN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Num:
   - ''
   - ESCAPE
