@@ -67,7 +67,7 @@ layers:
   - {t: '5', h: RIGHT ALT}
   - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ., h: ''''}
-  - ''
+  - Nav
   - ←
   - ↓
   - →
@@ -86,46 +86,46 @@ layers:
   - {t: ␣, h: LEFT SHIFT}
   - {t: '0', h: '='}
   - ↹
-  RAI:
-  - Esc
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-shift$$
-  - ←
-  - ↓
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - {t: BAS, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  Nav:
+  - ''
+  - ''
+  - ''
   - ↑
-  - ↓
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
   - ←
+  - ↓
   - →
-  - $$mdi:apple-keyboard-command$$
-  - ␣
-  - ⏎
-  - {t: Num, h: toggle}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
