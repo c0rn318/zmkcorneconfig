@@ -1,48 +1,48 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - ↹
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ;
+  - {t: Esc, h: '~'}
+  - {t: Q, h: '!'}
+  - {t: W, h: '@'}
+  - {t: E, h: '#'}
+  - {t: R, h: $}
+  - {t: T, h: '%'}
+  - {t: Y, h: ^}
+  - {t: U, h: AMPS}
+  - {t: I, h: '*'}
+  - {t: O, h: (}
+  - {t: P, h: )}
   - $$mdi:backspace-outline$$
-  - LEFT SHIFT
-  - A
-  - R
-  - S
-  - T
+  - ↹
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - G
-  - M
-  - N
-  - E
-  - I
-  - O
-  - ''''
-  - {t: LOW, h: toggle}
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '''', h: \}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - ','
   - .
   - /
-  - {t: RAI, h: toggle}
-  - $$mdi:apple-keyboard-control$$
-  - LEFT ALT
-  - LEFT COMMAND
-  - ␣
+  - DELETE
+  - ''
   - ENTER
-  - CALCULATOR
+  - ''
+  - ''
+  - ␣
+  - ''
   LOW:
   - ↹
   - '1'

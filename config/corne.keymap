@@ -8,13 +8,26 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Base {
             display-name = "BAS";
 
             // -----------------------------------------------------------------------------------------
@@ -24,10 +37,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp F      &kp P         &kp B               &kp J      &kp L      &kp U             &kp Y    &kp SEMI  &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp R  &kp S      &kp T         &kp G               &kp M      &kp N      &kp E             &kp I    &kp O     &kp SQT
-&tog 1          &kp Z  &kp X  &kp C      &kp D         &kp V               &kp K      &kp H      &kp COMMA         &kp DOT  &kp FSLH  &tog 2
-                              &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND    &kp SPACE  &kp ENTER  &kp K_CALCULATOR
+&HMR TILDE ESC  &HMR EXCL Q   &HMR AT W     &HMR HASH E  &HMR DOLLAR R  &HMR PERCENT T    &HMR CARET Y  &HMR AMPS U  &HMR ASTRK I  &HMR LEFT_PARENTHESIS O  &HMR RIGHT_PARENTHESIS P  &kp BSPC
+&kp TAB         &HMR LSHFT A  &HMR LCTRL S  &HMR LALT D  &HMR LGUI F    &kp G             &kp H         &HMR RGUI J  &HMR RALT K   &HMR RCTRL L             &HMR RSHFT SEMICOLON      &HMR BACKSLASH SQT
+&kp LSHFT       &kp Z         &kp X         &kp C        &kp V          &kp B             &kp N         &kp M        &kp COMMA     &kp DOT                  &kp FSLH                  &kp DELETE
+                                            &none        &kp ENTER      &none             &none         &kp SPACE    &none
             >;
         };
 
