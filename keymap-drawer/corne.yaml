@@ -43,29 +43,29 @@ layers:
   - ''
   - ␣
   - ''
-  LOW:
+  Num:
   - ''
   - ESCAPE
   - BACKSPACE
   - '7'
   - '8'
   - '9'
-  - ''
+  - {t: PAGE DOWN, h: Page Up}
   - {t: '7', h: toggle}
   - '8'
   - '9'
   - BACKSPACE
-  - ''
+  - DELETE
   - ''
   - UP ARROW
   - ENTER
-  - '4'
-  - '5'
-  - '6'
+  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
   - {t: End, h: Home}
-  - '4'
-  - '5'
-  - '6'
+  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '5', h: RIGHT ALT}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
   - {t: ., h: ''''}
   - ''
   - ←
@@ -74,13 +74,13 @@ layers:
   - '1'
   - '2'
   - '3'
-  - <
+  - {t: ESCAPE, h: <}
   - '1'
   - '2'
   - '3'
   - ENTER
   - {t: '[', h: ']'}
-  - $$mdi:apple-keyboard-control$$
+  - ''
   - '0'
   - LEFT SHIFT
   - {t: ␣, h: LEFT SHIFT}
@@ -128,4 +128,4 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - ␣
   - ⏎
-  - {t: LOW, h: toggle}
+  - {t: Num, h: toggle}
