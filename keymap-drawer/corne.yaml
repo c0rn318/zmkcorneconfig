@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  BAS:
+  Default:
   - {t: Esc, h: '~'}
   - {t: Q, h: '1'}
   - {t: W, h: '2'}
@@ -36,13 +36,13 @@ layers:
   - ','
   - .
   - /
-  - DELETE
-  - {t: FN, h: sticky}
+  - {t: DELETE, h: Med}
+  - {t: FN, h: Num}
   - ENTER
-  - ''
-  - ''
+  - {t: Sft+Alt+S, h: Sft+Gui+Ctl+4}
+  - {t: Ctl+Alt+DELETE, h: Gui+Alt+Ctl+A}
   - ␣
-  - ''
+  - {t: Num, h: Nav}
   FN:
   - F1
   - F2
@@ -123,7 +123,7 @@ layers:
   - '3'
   - ENTER
   - {t: '[', h: ']'}
-  - ''
+  - {t: Default, h: toggle, type: held}
   - '0'
   - LEFT SHIFT
   - {t: ␣, h: LEFT SHIFT}
@@ -153,7 +153,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -171,6 +171,13 @@ layers:
   - BACKSPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Media: [BT CLR ALL, '', '', '', '', '', '', Vol Up, ⏭️, '', '', '', BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, '', Vol Down, ⏮️, BRIGHTNESS INC, BRIGHTNESS DEC, '',
-    '', '', '', '', '', '', '', MUTE, ⏯, '', '', '', '', '', '', '', '', '']
+  - {type: held}
+  Med: ['', '', '', '', '', '', '', Vol Up, ⏭️, '', '', '', BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, '', Vol Down, ⏮️, BRIGHTNESS INC, BRIGHTNESS DEC, '', BT CLR ALL,
+    '', '', '', '', '', '', MUTE, ⏯, '', '', '', '', '', '', '', '', '']
+combos:
+- p: [5, 0, 37, 40, 6, 11]
+  k: Reset
+  l: [Med]
+- p: [38, 39]
+  k: {t: Default, h: toggle}
+  l: [Med]

@@ -29,13 +29,65 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
         };
+
+        SML: SML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SML";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            flavor = "balanced";
+        };
+
+        TML: TML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TML";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+
+        PHTL: PHTL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHTL";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Reset {
+            bindings = <&sys_reset>;
+            key-positions = <5 0 37 40 6 11>;
+            layers = <4>;
+        };
+
+        B2B {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+            layers = <4>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         Base {
-            display-name = "BAS";
+            display-name = "Default";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
@@ -44,10 +96,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&HMR TILDE ESC  &HMR NUMBER_1 Q  &HMR NUMBER_2 W  &HMR NUMBER_3 E  &HMR NUMBER_4 R  &HMR N5 T    &HMR NUMBER_6 Y  &HMR N7 U    &HMR N8 I    &HMR N9 O     &HMR N0 P             &kp BSPC
-&kp TAB         &HMR LSHFT A     &HMR LCTRL S     &HMR LALT D      &HMR LGUI F      &kp G        &kp H            &HMR RGUI J  &HMR RALT K  &HMR RCTRL L  &HMR RSHFT SEMICOLON  &HMR BACKSLASH SQT
-&SCW            &kp Z            &kp X            &kp C            &kp V            &kp B        &kp N            &kp M        &kp COMMA    &kp DOT       &kp FSLH              &kp DELETE
-                                                  &sl 1            &kp ENTER        &none        &none            &kp SPACE    &none
+&HMR TILDE ESC  &HMR NUMBER_1 Q  &HMR NUMBER_2 W  &HMR NUMBER_3 E  &HMR NUMBER_4 R  &HMR N5 T                              &HMR NUMBER_6 Y                    &HMR N7 U    &HMR N8 I    &HMR N9 O     &HMR N0 P             &kp BSPC
+&kp TAB         &HMR LSHFT A     &HMR LCTRL S     &HMR LALT D      &HMR LGUI F      &kp G                                  &kp H                              &HMR RGUI J  &HMR RALT K  &HMR RCTRL L  &HMR RSHFT SEMICOLON  &HMR BACKSLASH SQT
+&SCW            &kp Z            &kp X            &kp C            &kp V            &kp B                                  &kp N                              &kp M        &kp COMMA    &kp DOT       &kp FSLH              &PHTL 4 DELETE
+                                                  &SML 2 1         &kp ENTER        &HMR LS(LG(LC(NUMBER_4))) LS(LA(S))    &HMR LG(LA(LC(A))) LC(LA(DELETE))  &kp SPACE    &TML 3 2
             >;
         };
 
@@ -75,7 +127,7 @@
 &none     &kp ESCAPE    &kp BACKSPACE  &kp N7               &kp N8        &kp N9                &mt PG_UP PAGE_DOWN   &kt N7              &kp N8             &kp NUMBER_9         &kp BACKSPACE    &kp DELETE
 &none     &kp UP_ARROW  &kp ENTER      &HMR LCTRL NUMBER_4  &HMR LALT N5  &HMR LGUI NUMBER_6    &mt HOME END          &HMR RGUI NUMBER_4  &HMR RIGHT_ALT N5  &HMR RCTRL NUMBER_6  &mt APOS PERIOD  &mo 3
 &kp LEFT  &kp DOWN      &kp RIGHT      &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3          &mt LESS_THAN ESCAPE  &kp NUMBER_1        &kp NUMBER_2       &kp NUMBER_3         &kp ENTER        &mt RIGHT_BRACKET LEFT_BRACKET
-                                       &none                &kp N0        &kp LEFT_SHIFT        &mt LEFT_SHIFT SPACE  &HMR EQUAL N0       &kp TAB
+                                       &to 0                &kp N0        &kp LEFT_SHIFT        &mt LEFT_SHIFT SPACE  &HMR EQUAL N0       &kp TAB
             >;
         };
 
@@ -98,13 +150,13 @@
 
         Media {
             bindings = <
-&bt BT_CLR_ALL  &none         &none         &none         &none         &none           &none  &kp C_VOL_UP  &kp C_NEXT  &none                 &none                 &none
+&none           &none         &none         &none         &none         &none           &none  &kp C_VOL_UP  &kp C_NEXT  &none                 &none                 &none
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOL_DN  &kp C_PREV  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none
-&none           &none         &none         &none         &none         &none           &none  &kp C_MUTE    &kp C_PP    &none                 &none                 &none
+&bt BT_CLR_ALL  &none         &none         &none         &none         &none           &none  &kp C_MUTE    &kp C_PP    &none                 &none                 &none
                                             &none         &none         &none           &none  &none         &none
             >;
 
-            label = "Media";
+            label = "Med";
         };
     };
 };

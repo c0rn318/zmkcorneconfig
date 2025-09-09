@@ -232,8 +232,8 @@ rect.held, rect.combo.held {
   visibility: hidden;
 }
 </style>
-<g transform="translate(40, 0)" class="layer-BAS">
-<text x="0" y="28" class="label" id="BAS">BAS:</text>
+<g transform="translate(40, 0)" class="layer-Default">
+<text x="0" y="28" class="label" id="Default">Default:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -398,22 +398,33 @@ rect.held, rect.combo.held {
 <g transform="translate(812, 161)" class="key keypos-35">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DELETE</text>
-</g>
+<a href="#Med">
+<text x="0" y="24" class="key hold layer-activator">Med</text>
+</a></g>
 <g transform="translate(224, 205)" class="key keypos-36">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#FN">
 <text x="0" y="0" class="key tap layer-activator">FN</text>
-</a><text x="0" y="24" class="key hold">sticky</text>
-</g>
+</a><a href="#Num">
+<text x="0" y="24" class="key hold layer-activator">Num</text>
+</a></g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Sft+</tspan><tspan x="0" dy="1.2em">Alt+S</tspan>
+</text>
+<text x="0" y="38" class="key hold"><tspan style="font-size: 60%">Sft+Gui+C…</tspan></text>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Ctl+</tspan><tspan x="0" dy="1.2em">Alt+</tspan><tspan x="0" dy="1.2em">DELETE</tspan>
+</text>
+<text x="0" y="38" class="key hold"><tspan style="font-size: 60%">Gui+Alt+C…</tspan></text>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -421,7 +432,11 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
+<a href="#Num">
+<text x="0" y="0" class="key tap layer-activator">Num</text>
+</a><a href="#Nav">
+<text x="0" y="24" class="key hold layer-activator">Nav</text>
+</a></g>
 </g>
 </g>
 <g transform="translate(40, 331)" class="layer-FN">
@@ -758,8 +773,11 @@ rect.held, rect.combo.held {
 <text x="0" y="0" class="key tap">[</text>
 <text x="0" y="24" class="key hold">]</text>
 </g>
-<g transform="translate(224, 205)" class="key keypos-36">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(224, 205)" class="key held keypos-36">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<a href="#Default">
+<text x="0" y="0" class="key held tap layer-activator"><tspan style="font-size: 86%">Default</tspan></text>
+</a><text x="0" y="24" class="key held hold">toggle</text>
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -874,8 +892,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(812, 105)" class="key held keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
+<g transform="translate(812, 105)" class="key trans keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g transform="translate(28, 161)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -940,20 +959,16 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(616, 205)" class="key trans keypos-41">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(616, 205)" class="key held keypos-41">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 </g>
 </g>
-<g transform="translate(40, 1323)" class="layer-Media">
-<text x="0" y="28" class="label" id="Media">Media:</text>
+<g transform="translate(40, 1323)" class="layer-Med">
+<text x="0" y="28" class="label" id="Med">Med:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan><tspan x="0" dy="1.2em">ALL</tspan>
-</text>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1058,6 +1073,9 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(28, 161)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan><tspan x="0" dy="1.2em">ALL</tspan>
+</text>
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1111,6 +1129,24 @@ rect.held, rect.combo.held {
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+</g>
+<g class="combo combopos-0">
+<path d="M420,101 l-96,-51" class="combo"/>
+<path d="M420,101 l-373,-50" class="combo"/>
+<path d="M420,101 l-120,100" class="combo"/>
+<path d="M420,101 l120,100" class="combo"/>
+<path d="M420,101 l96,-51" class="combo"/>
+<path d="M420,101 l373,-50" class="combo"/>
+<rect rx="6" ry="6" x="406" y="88" width="28" height="26" class="combo"/>
+<text x="420" y="101" class="combo tap">Reset</text>
+</g>
+<g class="combo combopos-1">
+<path d="M420,224 l-50,0" class="combo"/>
+<path d="M420,224 l50,0" class="combo"/>
+<rect rx="6" ry="6" x="406" y="211" width="28" height="26" class="combo"/>
+<a href="#Default">
+<text x="420" y="224" class="combo tap layer-activator"><tspan style="font-size: 86%">Default</tspan></text>
+</a><text x="420" y="235" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
