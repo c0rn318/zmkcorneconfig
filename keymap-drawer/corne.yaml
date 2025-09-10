@@ -1,183 +1,194 @@
-layout: {zmk_keyboard: corne}
-layers:
-  Default:
-  - {t: Esc, h: '~'}
-  - {t: Q, h: '1'}
-  - {t: W, h: '2'}
-  - {t: E, h: '3'}
-  - {t: R, h: '4'}
-  - {t: T, h: '5'}
-  - {t: Y, h: '6'}
-  - {t: U, h: '7'}
-  - {t: I, h: '8'}
-  - {t: O, h: '9'}
-  - {t: P, h: '0'}
-  - $$mdi:backspace-outline$$
-  - ↹
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - G
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '''', h: \}
-  - '&SCW'
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: DELETE, h: Med}
-  - {t: FN, h: Num}
-  - ENTER
-  - {t: Sft+Alt+S, h: Sft+Gui+Ctl+4}
-  - {t: Ctl+Alt+DELETE, h: Gui+Alt+Ctl+A}
-  - ␣
-  - {t: Num, h: Nav}
-  FN:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Num:
-  - ''
-  - ESCAPE
-  - BACKSPACE
-  - '7'
-  - '8'
-  - '9'
-  - {t: PAGE DOWN, h: Page Up}
-  - {t: '7', h: toggle}
-  - '8'
-  - '9'
-  - BACKSPACE
-  - DELETE
-  - ''
-  - UP ARROW
-  - ENTER
-  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: End, h: Home}
-  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '5', h: RIGHT ALT}
-  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ., h: ''''}
-  - Nav
-  - ←
-  - ↓
-  - →
-  - '1'
-  - '2'
-  - '3'
-  - {t: ESCAPE, h: <}
-  - '1'
-  - '2'
-  - '3'
-  - ENTER
-  - {t: '[', h: ']'}
-  - {t: Default, h: toggle, type: held}
-  - '0'
-  - LEFT SHIFT
-  - {t: ␣, h: LEFT SHIFT}
-  - {t: '0', h: '='}
-  - ↹
-  Nav:
-  - ''
-  - ''
-  - ''
-  - ↑
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ←
-  - ↓
-  - →
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DELETE
-  - {t: ENTER, h: ↹}
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  Med: ['', '', '', '', '', '', '', Vol Up, ⏭️, '', '', '', BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, '', Vol Down, ⏮️, BRIGHTNESS INC, BRIGHTNESS DEC, '', BT CLR ALL,
-    '', '', '', '', '', '', MUTE, ⏯, '', '', '', '', '', '', '', '', '']
-combos:
-- p: [5, 0, 37, 40, 6, 11]
-  k: Reset
-  l: [Med]
-- p: [38, 39]
-  k: {t: Default, h: toggle}
-  l: [Med]
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    behaviors {
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+
+        SCW: SCW {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SCW";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <175>;
+        };
+
+        SML: SML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SML";
+            bindings = <&mo>, <&sl>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            hold-trigger-on-release;
+            flavor = "balanced";
+        };
+
+        TML: TML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TML";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+
+        PHTL: PHTL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "PHTL";
+            bindings = <&to>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        Reset {
+            bindings = <&sys_reset>;
+            key-positions = <5 0 37 40 6 11>;
+            layers = <5>;
+        };
+
+        Calc {
+            bindings = <&kp C_AL_CALCULATOR>;
+            key-positions = <12 23>;
+        };
+
+        Gamer {
+            bindings = <&to 6>;
+            key-positions = <0 24 11 35>;
+            layers = <0>;
+        };
+
+        Revert {
+            bindings = <&to 0>;
+            key-positions = <0 24 11 35>;
+            layers = <6>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        Base {
+            display-name = "Default";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
+            bindings = <
+&HMR TILDE ESC  &kp Q         &kp W         &kp E        &kp R        &kp T                                  &kp Y                              &kp U        &kp I        &kp O         &kp P                 &kp BSPC
+&kp TAB         &HMR LSHFT A  &HMR LCTRL S  &HMR LALT D  &HMR LGUI F  &kp G                                  &kp H                              &HMR RGUI J  &HMR RALT K  &HMR RCTRL L  &HMR RSHFT SEMICOLON  &HMR BACKSLASH SQT
+&SCW            &kp Z         &kp X         &kp C        &kp V        &kp B                                  &kp N                              &kp M        &kp COMMA    &kp DOT       &kp FSLH              &PHTL 5 DELETE
+                                            &SML 1 2     &kp ENTER    &HMR LS(LG(LC(NUMBER_4))) LS(LA(S))    &HMR LG(LA(LC(A))) LC(LA(DELETE))  &kp SPACE    &TML 4 3
+            >;
+        };
+
+        NumberRow {
+            bindings = <
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6    &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Num_Row";
+        };
+
+        Function {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "FN";
+        };
+
+        Num_Pad {
+            display-name = "Num";
+
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
+            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            //                    | GUI |     | SPC |   | ENT |     | ALT |
+
+            bindings = <
+&kp ESCAPE                      &kp BACKSPACE          &kp N7                      &kp N8            &kp N9                  &HMR LG(A) LC(A)        &mt PG_UP PAGE_DOWN  &kp N7              &kp N8             &kp NUMBER_9         &kp BACKSPACE     &kp DELETE
+&kp TAB                         &HMR LEFT_SHIFT MINUS  &HMR LEFT_CONTROL NUMBER_4  &HMR LEFT_ALT N5  &HMR LEFT_GUI NUMBER_6  &HMR LC(X) LC(C)        &mt HOME END         &HMR RGUI NUMBER_4  &HMR RIGHT_ALT N5  &HMR RCTRL NUMBER_6  &HMR RSHFT MINUS  &mo 4
+&mt RIGHT_BRACKET LEFT_BRACKET  &kp ENTER              &kp N1                      &kp N2            &kp N3                  &HMR LC(LS(V)) LC(V)    &kp ESCAPE           &kp NUMBER_1        &kp NUMBER_2       &kp NUMBER_3         &kp ENTER         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+                                                                                   &kp PERIOD        &kp N0                  &to 0                   &kp SLASH            &kp N0              &kp DOT
+            >;
+        };
+
+        Navigation {
+            bindings = <
+&none  &none  &none     &kp UP      &none          &none            &trans  &trans     &trans  &trans  &trans  &trans
+&none  &none  &kp LEFT  &kp DOWN    &kp RIGHT      &none            &trans  &trans     &trans  &trans  &trans  &trans
+&none  &none  &none     &none       &none          &none            &trans  &trans     &trans  &trans  &trans  &trans
+                        &kp DELETE  &mt TAB ENTER  &kp BACKSPACE    &trans  &kp SPACE  &trans
+            >;
+
+            display-name = "Nav";
+        };
+
+        Media {
+            label = "Med";
+            bindings = <
+&none           &none         &none         &none         &none         &none           &none  &kp C_VOL_UP  &kp C_NEXT  &none                 &none                 &none
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &kp C_VOL_DN  &kp C_PREV  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none
+&bt BT_CLR_ALL  &none         &none         &none         &none         &none           &none  &kp C_MUTE    &kp C_PP    &none                 &none                 &none
+                                            &to 4         &to 0         &to 3           &none  &none         &none
+            >;
+        };
+
+        Gaming {
+            bindings = <
+&kp F4  &kp F1   &none  &kp W  &none   &none     &none            &kp F10  &kp F11  &kp F12  &none   &none
+&none   &kp ESC  &kp A  &kp S  &kp D   &kp F5    &kp C_VOLUME_UP  &kp F6   &kp F7   &kp F8   &kp F9  &kp C_BRIGHTNESS_INC
+&none   &none    &none  &none  &none   &none     &kp C_VOL_DN     &none    &none    &none    &none   &kp C_BRIGHTNESS_DEC
+                        &none  &kp F2  &kp F3    &none            &none    &none
+            >;
+        };
+    };
+};
