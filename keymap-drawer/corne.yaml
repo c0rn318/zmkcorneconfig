@@ -1,7 +1,17 @@
 layout: {zmk_keyboard: corne}
 layers:
-  Default:
-  - {t: Esc, h: '~'}
+BAS:
+- {t: Esc, h: '~'}
+  - {t: Q, h: '!'}
+  - {t: W, h: '@'}
+  - {t: E, h: '#'}
+  - {t: R, h: $}
+  - {t: T, h: '%'}
+  - {t: Y, h: ^}
+  - {t: U, h: AMPS}
+  - {t: I, h: '*'}
+  - {t: O, h: (}
+  - {t: P, h: )}
   - {t: Q, h: '1'}
   - {t: W, h: '2'}
   - {t: E, h: '3'}
@@ -12,37 +22,38 @@ layers:
   - {t: I, h: '8'}
   - {t: O, h: '9'}
   - {t: P, h: '0'}
-  - $$mdi:backspace-outline$$
-  - ↹
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
-  - G
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '''', h: \}
-  - '&SCW'
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: DELETE, h: Med}
-  - {t: FN, h: Num}
-  - ENTER
-  - {t: Sft+Alt+S, h: Sft+Gui+Ctl+4}
-  - {t: Ctl+Alt+DELETE, h: Gui+Alt+Ctl+A}
-  - ␣
-  - {t: Num, h: Nav}
+- $$mdi:backspace-outline$$
+- ↹
+- {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+- {t: S, h: '$$mdi:apple-keyboard-control$$'}
+- {t: D, h: '$$mdi:apple-keyboard-option$$'}
+- {t: F, h: '$$mdi:apple-keyboard-command$$'}
+- G
+- H
+- {t: J, h: '$$mdi:apple-keyboard-command$$'}
+- {t: K, h: '$$mdi:apple-keyboard-option$$'}
+- {t: L, h: '$$mdi:apple-keyboard-control$$'}
+- {t: ;, h: '$$mdi:apple-keyboard-shift$$'}
+- {t: '''', h: \}
+- '&SCW'
+- Z
+- X
+- C
+- V
+- B
+- N
+- M
+- ','
+- .
+- /
+- DELETE
+  - ''
+  - {t: FN, h: sticky}
+- ENTER
+- ''
+- ''
+- ␣
+- ''
   FN:
   - F1
   - F2
@@ -86,98 +97,91 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Num:
-  - ''
-  - ESCAPE
-  - BACKSPACE
-  - '7'
-  - '8'
-  - '9'
-  - {t: PAGE DOWN, h: Page Up}
-  - {t: '7', h: toggle}
-  - '8'
-  - '9'
-  - BACKSPACE
-  - DELETE
-  - ''
-  - UP ARROW
-  - ENTER
-  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '6', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: End, h: Home}
-  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '5', h: RIGHT ALT}
-  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: ., h: ''''}
-  - Nav
-  - ←
-  - ↓
-  - →
-  - '1'
-  - '2'
-  - '3'
-  - {t: ESCAPE, h: <}
-  - '1'
-  - '2'
-  - '3'
-  - ENTER
-  - {t: '[', h: ']'}
-  - {t: Default, h: toggle, type: held}
-  - '0'
-  - LEFT SHIFT
-  - {t: ␣, h: LEFT SHIFT}
-  - {t: '0', h: '='}
-  - ↹
-  Nav:
-  - ''
-  - ''
-  - ''
-  - ↑
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ←
-  - ↓
-  - →
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DELETE
-  - {t: ENTER, h: ↹}
-  - BACKSPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  Med: ['', '', '', '', '', '', '', Vol Up, ⏭️, '', '', '', BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, '', Vol Down, ⏮️, BRIGHTNESS INC, BRIGHTNESS DEC, '', BT CLR ALL,
-    '', '', '', '', '', '', MUTE, ⏯, '', '', '', '', '', '', '', '', '']
-combos:
-- p: [5, 0, 37, 40, 6, 11]
-  k: Reset
-  l: [Med]
-- p: [38, 39]
-  k: {t: Default, h: toggle}
-  l: [Med]
+Num:
+- ''
+- ESCAPE
+- BACKSPACE
+- '7'
+- '8'
+- '9'
+- {t: PAGE DOWN, h: Page Up}
+- {t: '7', h: toggle}
+- '8'
+- '9'
+- BACKSPACE
+- DELETE
+- ''
+- UP ARROW
+- ENTER
+- {t: '4', h: '$$mdi:apple-keyboard-control$$'}
+- {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+- {t: '6', h: '$$mdi:apple-keyboard-command$$'}
+- {t: End, h: Home}
+- {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+- {t: '5', h: RIGHT ALT}
+- {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+- {t: ., h: ''''}
+- Nav
+- ←
+- ↓
+- →
+- '1'
+- '2'
+- '3'
+- {t: ESCAPE, h: <}
+- '1'
+- '2'
+- '3'
+- ENTER
+- {t: '[', h: ']'}
+- ''
+- '0'
+- LEFT SHIFT
+- {t: ␣, h: LEFT SHIFT}
+- {t: '0', h: '='}
+- ↹
+Nav:
+- ''
+- ''
+- ''
+- ↑
+- ''
+- ''
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- ''
+- ''
+- ←
+- ↓
+- →
+- ''
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {type: held}
+- ''
+- ''
+- ''
+- ''
+- ''
+- ''
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- DELETE
+- {t: ENTER, h: ↹}
+- BACKSPACE
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+- {t: ▽, type: trans}
+Media: [BT CLR ALL, '', '', '', '', '', '', Vol Up, ⏭️, '', '', '', BT CLR, BT 1, BT 2, BT 3, BT 4, BT 5, '', Vol Down, ⏮️, BRIGHTNESS INC, BRIGHTNESS DEC, '',
+'', '', '', '', '', '', '', MUTE, ⏯, '', '', '', '', '', '', '', '', '']
